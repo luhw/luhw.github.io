@@ -19,22 +19,25 @@
   //     console.info("调用success");
   //   }
   // });
-  
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj'
+  // var script = document.createElement('script');
+  // script.type = 'text/javascript';
+  // script.src = 'http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj'
 
   // document.getElementsByTagName('head')[0].appendChild(script);
 
   window.success_call = function(res) {
     debugger
   }
-
-  // $.ajax({
-  //   url: "http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj",
-  //   dataType: "jsonp",
-  //   jsonp: "success_call"
-  // });
+  
+  $.ajax({
+        url: "http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj",
+        type: 'GET',
+        dataType: "jsonp",
+        jsonp: "success_call",
+        success: function (data) {
+            debugger
+        }
+    });
     //$.get('http://121.199.160.205/dd/content/query?type=pj', function(res) {
       // if (res.code == 200) {
       //   var articles = res.data || [],

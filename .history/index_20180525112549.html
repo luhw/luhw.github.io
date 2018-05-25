@@ -10,31 +10,24 @@
 <body>
   hello luhw...
   <script type="text/javascript">
+  $.ajax({
+      url: "http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj",
+      dataType: "jsonp",  //指定服务器返回的数据类型
+      jsonpCallback: "success_call",  //指定回调函数名称
+      success: function (data) {
+          console.info("调用success");
+      }
+  });
   // $.ajax({
-  //   url: "http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj",
-  //   dataType: "jsonp",  //指定服务器返回的数据类型
-  //   contentType: 'text/html',
-  //   jsonpCallback: "success_call",  //指定回调函数名称
-  //   success: function (data) {
-  //     console.info("调用success");
-  //   }
-  // });
-  
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj'
-
-  // document.getElementsByTagName('head')[0].appendChild(script);
-
-  window.success_call = function(res) {
-    debugger
-  }
-
-  // $.ajax({
-  //   url: "http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj",
-  //   dataType: "jsonp",
-  //   jsonp: "success_call"
-  // });
+  //       url: "http://192.168.1.17:18888/dd/content/queryByJsonp?type=pj",
+  //       type: 'GET',
+  //       contentType: 'text/html',
+  //       dataType: "jsonp",
+  //       jsonp: "success_call",
+  //       success: function (data) {
+  //           debugger
+  //       }
+  //   });
     //$.get('http://121.199.160.205/dd/content/query?type=pj', function(res) {
       // if (res.code == 200) {
       //   var articles = res.data || [],
