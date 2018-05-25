@@ -27,17 +27,17 @@
 
   // document.getElementsByTagName('head')[0].appendChild(script);
 
-  window.success_call = function(res) {
-    debugger
-  }
+  // window.success_call = function(res) {
+  //   debugger
+  // }
 
-  $.ajax({
-    url: "http://121.199.160.205/dd/content/queryByJsonp?type=pj",
-    dataType: "jsonp",
-    jsonp: "success_call"
-  });
-    //$.get('https://bird.ioliu.cn/v1?url=http://121.199.160.205/dd/content/query?type=pj', function(res) {
-    //  debugger
+  // $.ajax({
+  //   url: "http://121.199.160.205/dd/content/queryByJsonp?type=pj",
+  //   dataType: "jsonp",
+  //   jsonp: "success_call"
+  // });
+    $.get('http://121.199.160.205/dd/content/query?type=pj', function(res) {
+      debugger
       // if (res.code == 200) {
       //   var articles = res.data || [],
       //     htmls = [];
@@ -64,7 +64,7 @@
 
       //   $('#articleWrapper').html(htmls.join(''));  
       // }
-   //});
+   });
   </script>
 </body>
 </html>
