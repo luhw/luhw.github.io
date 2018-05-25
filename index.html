@@ -36,8 +36,15 @@
   //   dataType: "jsonp",
   //   jsonp: "success_call"
   // });
-    $.get('http://121.199.160.205/dd/content/query?type=pj', function(res) {
-      debugger
+
+    var iframe = document.createElement('iframe');
+
+    iframe.src = 'http://121.199.160.205/dd/content/queryByJsonp?type=pj';
+
+    document.body.appendChild(iframe);
+
+   // $.get('http://121.199.160.205/dd/content/query?type=pj', function(res) {
+    //  debugger
       // if (res.code == 200) {
       //   var articles = res.data || [],
       //     htmls = [];
@@ -64,7 +71,7 @@
 
       //   $('#articleWrapper').html(htmls.join(''));  
       // }
-   });
+   //});
   </script>
 </body>
 </html>
