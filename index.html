@@ -5,8 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>luhw's page</title>
+  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
 </head>
 <body>
   hello luhw...
+  <script type="text/javascript">
+    $.get('http://121.199.160.205/dd/content/query?type=pj', function(res) {
+      debugger
+      // if (res.code == 200) {
+      //   var articles = res.data || [],
+      //     htmls = [];
+
+      //   articles.forEach((article, idx) => {
+      //     htmls.push([
+      //       '<div class="article">',
+      //         '<a href="'+ article.url +'" target="_blank">',
+      //           '<h4>',
+      //             '<span class="strong">',
+      //               '【' + article.title.split('|')[0] + '】',
+      //             '</span>',
+      //             '<span>',
+      //               article.title.split('|')[1],
+      //             '</span>',  
+      //           '</h4>',
+      //           '<p class="des">',
+      //             article.content,
+      //           '</p>',
+      //         '</a>',
+      //        '</div>'       
+      //     ].join(''))
+      //   });
+
+      //   $('#articleWrapper').html(htmls.join(''));  
+      // }
+    });
+  </script>
 </body>
 </html>
