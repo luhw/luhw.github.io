@@ -5,6 +5,8 @@ importScripts('https://cdn.bootcdn.net/ajax/libs/firebase/9.17.1/firebase-app-co
 importScripts('https://cdn.bootcdn.net/ajax/libs/firebase/9.17.1/firebase-messaging-compat.min.js');
 // importScripts('/__/firebase/init.js');
 
+console.log('https://luhw.github.io/firebase-messaging-sw.js......')
+
 const firebaseConfig = {
   apiKey: "AIzaSyBu1aKjmpNoEzXqMSpK-rzYJB05ml5U-UQ",
   authDomain: "fb-msg-297d2.firebaseapp.com",
