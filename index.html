@@ -25,6 +25,8 @@ limitations under the License.
   <link rel="stylesheet" href="main.css">
 
   <link rel="manifest" href="/manifest.json">
+
+  <link rel="stylesheet" type="text/css" href="//g.alicdn.com/cloudcallcenter/web-workbench-sdk/2.11.0/main.min.css">
 </head>
 <body>
 <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -69,6 +71,19 @@ limitations under the License.
   </main>
 </div>
 
+<div id="cloudcallcenter"></div>
+<!--sdk js文件-->
+<script type="text/javascript" src="//g.alicdn.com/cloudcallcenter/SIPml/0.6.2/SIPml-api.js"></script>
+<script type="text/javascript" src="//g.alicdn.com/cloudcallcenter-voip/web-agentbar-sdk/1.15.1/index.js"></script>
+<script type="text/javascript" src="//g.alicdn.com/cloudcallcenter/web-workbench-sdk/2.11.0/workbenchSdk.min.js"></script>
+<script type="text/javascript">
+  window.workbench = new WorkbenchSdk({
+    dom: 'cloudcallcenter',
+    instanceId: 'ddcc',
+    regionId: 'cn-shanghai'
+  })
+</script>  
+  
 <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
