@@ -18,8 +18,24 @@
       dom: 'cloudcallcenter',
       instanceId: 'ddcc',
       regionId: 'cn-shanghai',
-      ajaxOrigin: 'http://192.168.1.122:30200',
-      ajaxPath: '/cc'
+      ajaxOrigin: 'https://d3ac-113-118-187-90.ngrok-free.app',
+      ajaxPath: '/cc',
+      exportErrorOfApi: true,
+      onInit: () => {
+        alert(workbench.isAvailBrowser())
+      },
+      onErrorNotify: function (error) {
+        console.warn('onErrorNotify===', error)
+      }
+      // apiAxiosFunc: (apiName, params) => {
+      //   console.log('cloudcallcenter...', apiName, params)
+
+      //   return new Promise(resolve => {
+      //     resolve({
+      //       data: {}
+      //     })
+      //   })
+      // }
     })
   </script>
 </body>
