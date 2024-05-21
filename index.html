@@ -4,39 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!--sdk样式文件-->
-  <link rel="stylesheet" type="text/css" href="//g.alicdn.com/cloudcallcenter/web-workbench-sdk/2.11.0/main.min.css">
 </head>
 <body>
   <div id="cloudcallcenter"></div>
-  <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-  <!--sdk js文件-->
-  <script type="text/javascript" src="//g.alicdn.com/cloudcallcenter/SIPml/0.6.2/SIPml-api.js"></script>
-  <script type="text/javascript" src="//g.alicdn.com/cloudcallcenter-voip/web-agentbar-sdk/1.15.1/index.js"></script>
-  <script type="text/javascript" src="//g.alicdn.com/cloudcallcenter/web-workbench-sdk/2.11.0/workbenchSdk.min.js"></script>
+  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-    window.workbench = new WorkbenchSdk({
-      dom: 'cloudcallcenter',
-      instanceId: 'ddcc',
-      regionId: 'cn-shanghai',
-      ajaxOrigin: 'https://d3ac-113-118-187-90.ngrok-free.app',
-      ajaxPath: '/cc',
-      exportErrorOfApi: true,
-      onInit: () => {
-      },
-      onErrorNotify: function (error) {
-        console.warn('onErrorNotify===', error)
-      }
-      // apiAxiosFunc: (apiName, params) => {
-      //   console.log('cloudcallcenter...', apiName, params)
-
-      //   return new Promise(resolve => {
-      //     resolve({
-      //       data: {}
-      //     })
-      //   })
-      // }
-    })
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/664c37929a809f19fb333bd0/1hucri5rs';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
   </script>
+  <!--End of Tawk.to Script-->
 </body>
 </html>
